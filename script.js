@@ -15,7 +15,7 @@ const game = {
 	},
 	collision: new Set(),
 	generateShip() {
-		for (let i = 0; i < this.optionShip.length; i++) {
+		for (let i = 0; i < this.optionShip.count.length; i++) {
 			for (let j = 0; j < this.optionShip.count[i]; j++) {
 				const size = this.optionShip.size[i];
 				const ship = this.generateOptionsShip(size);
@@ -105,6 +105,7 @@ const play = {
 };
 
 const show = {
+
 	hit(elem) {
 		this.changeClass(elem, 'hit');
 	},
@@ -154,7 +155,6 @@ const fire = (event) => {
 						play.render();
 					}
 				}
-
 			}
 		}
 	}
