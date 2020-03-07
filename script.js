@@ -165,7 +165,7 @@ const init = () => {
 	play.render();
 	game.generateShip();
 	again.addEventListener('click', () => {
-		location.reload;
+		location.reload();
 	});
 	record.addEventListener('dblclick', () => {
 		localStorage.clear();
